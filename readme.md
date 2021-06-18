@@ -1,8 +1,9 @@
 ##Recognition of temporary e-mail addresses as validator for Symfony
 
-[![Latest Stable Version](http://poser.pugx.org/marcel-strahl/temporary-email-validator-symfony/v)](https://packagist.org/packages/marcel-strahl/temporary-email-validator-symfony) [![Total Downloads](http://poser.pugx.org/marcel-strahl/temporary-email-validator-symfony/downloads)](https://packagist.org/packages/marcel-strahl/temporary-email-validator-symfony) [![Latest Unstable Version](http://poser.pugx.org/marcel-strahl/temporary-email-validator-symfony/v/unstable)](https://packagist.org/packages/marcel-strahl/temporary-email-validator-symfony) [![License](http://poser.pugx.org/marcel-strahl/temporary-email-validator-symfony/license)](https://packagist.org/packages/marcel-strahl/temporary-email-validator-symfony)
-[![composer.lock](http://poser.pugx.org/marcel-strahl/temporary-email-validator-symfony/composerlock)](https://packagist.org/packages/marcel-strahl/temporary-email-validator-symfony)
-[![License](http://poser.pugx.org/marcel-strahl/temporary-email-validator-symfony/license)](https://packagist.org/packages/marcel-strahl/temporary-email-validator-symfony)
+[![Latest Stable Version](http://poser.pugx.org/marcel-strahl/temporary-email-validator-bundle/v)](https://packagist.org/packages/marcel-strahl/temporary-email-validator-bundle) [![Total Downloads](http://poser.pugx.org/marcel-strahl/temporary-email-validator-bundle/downloads)](https://packagist.org/packages/marcel-strahl/temporary-email-validator-bundle) [![Latest Unstable Version](http://poser.pugx.org/marcel-strahl/temporary-email-validator-bundle/v/unstable)](https://packagist.org/packages/marcel-strahl/temporary-email-validator-bundle) [![License](http://poser.pugx.org/marcel-strahl/temporary-email-validator-bundle/license)](https://packagist.org/packages/marcel-strahl/temporary-email-validator-bundle)
+[![composer.lock](http://poser.pugx.org/marcel-strahl/temporary-email-validator-bundle/composerlock)](https://packagist.org/packages/marcel-strahl/temporary-email-validator-bundle)
+[![License](http://poser.pugx.org/marcel-strahl/temporary-email-validator-bundle/license)](https://packagist.org/packages/marcel-strahl/temporary-email-validator-bundle)
+![Gitworkflow](https://github.com/Dropelikeit/temporary-email-validator-bundle/actions/workflows/ci.yml/badge.svg)
 
 It is compatible and tested with PHP 8.+ on Symfony 5.x.
 

@@ -34,7 +34,7 @@ final class TemporaryEmailValidatorExtensionTest extends AbstractExtensionTestCa
         /**
          * @var MarcelStrahlTemporaryEmailValidatorExtension $extension
          */
-        $extension = $this->container->getExtension('temporary_email_validator');
+        $extension = $this->container->getExtension('marcel_strahl_temporary_email_validator');
 
         $this->assertSame(
             [
