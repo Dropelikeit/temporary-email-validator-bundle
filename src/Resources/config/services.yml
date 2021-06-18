@@ -1,0 +1,23 @@
+services:
+  temporary_email_validator.validator:
+    class: MarcelStrahl\TemporaryEmailValidatorSymfony\Validator\IsNotTemporaryEmailValidator
+    arguments: ['@temporary_email_validator.client', '@logger']
+    public: true
+    autowire: true
+    autoconfigure: true
+    tags: [temporary_email_validator]
+
+  temporary_email_validator.client:
+    class: TemporaryEmailDetection\Client
+    arguments: ['@temporary_email_validator.guzzle_client']
+    public: true
+    autowire: true
+    autoconfigure: true
+    tags: [temporary_email_validator]
+
+  temporary_email_validator.guzzle_client:
+    class: GuzzleHttp\Client
+    public: true
+    autowire: true
+    autoconfigure: true
+    tags: [temporary_email_validator]

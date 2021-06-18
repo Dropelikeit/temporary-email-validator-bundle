@@ -1,0 +1,63 @@
+{
+  "name": "marcel-strahl/temporary-email-validator-bundle",
+  "description": "add temporary email address validator for symfony",
+  "keywords": ["symfony", "temporary email", "email", "temporary", "validator"],
+  "type": "symfony-bundle",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "marcelstrahl",
+      "email": "info@marcel-strahl.de",
+      "role": "Maintainer",
+      "homepage": "https://www.marcel-strahl.de"
+    }
+  ],
+  "support": {
+    "email": "info@marcel-strahl.de",
+    "source": "https://github.com/Dropelikeit/temporary-email-validator-symfony/issues"
+  },
+  "autoload": {
+    "psr-4": {
+      "MarcelStrahl\\TemporaryEmailValidatorBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MarcelStrahl\\TemporaryEmailValidatorBundle\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "cs-check": "php-cs-fixer -v --dry-run --using-cache=no fix",
+    "cs-fix": "php-cs-fixer --using-cache=no fix",
+    "test": "phpunit --configuration phpunit.xml.dist",
+    "analyze": "vendor/bin/phpstan analyse --configuration phpstan.neon.dist",
+    "analyze-add": "vendor/bin/phpstan analyse --configuration phpstan.neon.dist --error-format baselineNeon  app/ tests/ > phpstan-baseline.neon"
+  },
+  "require": {
+    "symfony/dependency-injection": "^5.3",
+    "symfony/framework-bundle": "^5.3",
+    "doctrine/annotations": "^1.13",
+    "symfony/validator": "^5.3",
+    "jprangenbergde/temporary-email-detection": "^1.1",
+    "symfony/translation": "^5.3"
+  },
+  "require-dev": {
+    "symfony/phpunit-bridge": "^5.3",
+    "phpunit/phpunit": "^9.5",
+    "matthiasnoback/symfony-dependency-injection-test": "^4.2",
+    "phpstan/phpstan": "^0.12.89",
+    "phpstan/phpstan-phpunit": "^0.12.19",
+    "phpstan/phpstan-symfony": "^0.12.36",
+    "friendsofphp/php-cs-fixer": "^3.0",
+    "phpstan/phpstan-webmozart-assert": "^0.12.12"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
