@@ -55,8 +55,9 @@ final class IsNotTemporaryEmailValidatorTest extends ConstraintValidatorTestCase
     /**
      * @test
      * @dataProvider dataProviderWithNoEmailValue
+     * @param string|int $value
      */
-    public function canNotValidateCauseInvalidEmail(string | int $value, bool $throwException): void
+    public function canNotValidateCauseInvalidEmail($value, bool $throwException): void
     {
         if ($throwException) {
             $this->expectException(UnexpectedTypeException::class);
@@ -66,7 +67,7 @@ final class IsNotTemporaryEmailValidatorTest extends ConstraintValidatorTestCase
     }
 
     /**
-     * @return array<string, array>
+     * @return array<string, array<int, int|string|bool>>
      */
     public function dataProviderWithNoEmailValue(): array
     {

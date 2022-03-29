@@ -27,6 +27,8 @@ final class IsNotTemporaryEmailValidator extends ConstraintValidator
     }
 
     /**
+     * @param mixed $value
+     *
      * {@inheritDoc}
      */
     public function validate($value, Constraint $constraint): void
