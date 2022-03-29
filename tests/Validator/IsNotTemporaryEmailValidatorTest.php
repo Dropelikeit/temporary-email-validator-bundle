@@ -55,6 +55,7 @@ final class IsNotTemporaryEmailValidatorTest extends ConstraintValidatorTestCase
     /**
      * @test
      * @dataProvider dataProviderWithNoEmailValue
+     *
      * @param string|int $value
      */
     public function canNotValidateCauseInvalidEmail($value, bool $throwException): void
